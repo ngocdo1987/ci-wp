@@ -7,4 +7,9 @@ class Page extends CI_Controller {
     {
         echo 'page index';
     }
+
+    public function detail($slug)
+    {
+    	echo $slug;
+    }
 }
