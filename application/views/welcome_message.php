@@ -64,6 +64,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		box-shadow: 0 0 8px #D0D0D0;
 	}
 	</style>
+
+	<?php echo $debugbarRenderer->renderHead() ?>
 </head>
 <body>
 
@@ -84,11 +86,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
 	This is HMVC example: <br/>
-	<?=Modules::run('blog/index')?>
-	<br/>
-	Blog/page: <br/>
-	<?=Modules::run('blog/page/index')?>
+	
 </div>
+
+<?php echo $debugbarRenderer->render() ?>
 
 </body>
 </html>

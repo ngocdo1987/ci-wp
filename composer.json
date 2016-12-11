@@ -13,7 +13,9 @@
 	"require": {
 		"php": ">=5.2.4",
 		"facebook/graph-sdk": "^5.4",
-		"robmorgan/phinx": "^0.6.5"
+		"robmorgan/phinx": "^0.6.5",
+		"mult1mate/cron-manager": "^1.1",
+		"maximebf/debugbar": "^1.13"
 	},
 	"suggest": {
 		"paragonie/random_compat": "Provides better randomness in PHP 5.x"
