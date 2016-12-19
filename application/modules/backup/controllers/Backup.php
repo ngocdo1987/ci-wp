@@ -35,7 +35,7 @@ class Backup extends CI_Controller {
         $this->manager = new Manager($filesystems, $databases, $compressors);
 	}
 
-    function index()
+    public function index()
     {
         $this->manager->makeBackup()
         ->run('development', [
@@ -44,14 +44,14 @@ class Backup extends CI_Controller {
         ], 'gzip');
     }
 
-    function backup()
+    public function backup()
     {
 
     }
 
-    function restore()
+    public function restore()
     {
-        
+
     }
 
 }
